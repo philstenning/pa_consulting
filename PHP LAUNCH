@@ -1,0 +1,5 @@
+<html><body>
+<?
+exec ("helloworld.py");
+?>
+</body></html>
