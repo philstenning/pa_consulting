@@ -3,6 +3,7 @@ from flask import request
 from flask import render_template
 import stringComparison
 
+
 app = Flask(__name__)
 
 @app.route('/')
