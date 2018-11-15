@@ -1,21 +1,21 @@
-from flask import Flask
-from flask import request
-from flask import render_template
-import stringComparison
-
-
+from flask import Flask, render_template
 app = Flask(__name__)
 
-@app.route('/')
-def my_form():
-    return render_template("my-form.html") # this should be the name of your html file
 
-@app.route('/', methods=['POST'])
-def my_form_post():
-    text1 = request.form['text1']
-    text2 = request.form['text2']
-   
-   
-  
-if __name__ == '__main__':
-    app.run()
+
+@app.route("/")
+def index():
+    return "Hello, world!"
+
+@app.route('python here', methods=['GET', 'POST'])
+def cputemp():
+    mytemp1 = commands.getoutput('')
+    return render_template("python here", temp=mytemp1)
+
+
+@app.route('/test', methods=['GET', 'POST'])
+def test():
+    return render_template("test.html")
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=5000, debug=True)
