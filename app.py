@@ -1,21 +1,28 @@
-from flask import Flask, render_template
-app = Flask(__name__)
+from flask import Flask, render_template, url_for
+from data import my_data
 
+app = Flask(__name__)
 
 
 @app.route("/")
 def index():
-    return "Hello, world!"
-
-@app.route('python here', methods=['GET', 'POST'])
-def cputemp():
-    mytemp1 = commands.getoutput('')
-    return render_template("python here", temp=mytemp1)
+    return render_template("index.html", name='Rapunzel')
 
 
-@app.route('/test', methods=['GET', 'POST'])
-def test():
-    return render_template("test.html")
+@app.route("/api/person")
+# returns the data from the file /data/my_data.py
+def api_person():
+    return my_data.person()
+
+
+@app.route('/<string:page_name>/')
+def static_page(page_name):
+    return url_for('static', filename=page_name)
+
+
+with app.test_request_context():
+    print(url_for('index'))
+    print(url_for('api_person'))
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000, debug=True)
