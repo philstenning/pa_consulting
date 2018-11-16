@@ -1,0 +1,16 @@
+body{
+    background-color: hotpink;
+    color:black
+}
+
+.btn{
+    background-color: blue; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+}
