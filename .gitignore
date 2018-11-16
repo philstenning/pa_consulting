@@ -64,3 +64,4 @@ typings/
 ./.vscode
 data/__pycache__/my_data.cpython-37.pyc
 data/__pycache__/**.pyc
+data/__pycache__/**
