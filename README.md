@@ -18,6 +18,17 @@ keep all of us writing in the same style.
 5. Code Spell Checker
 6. Python - the Microsoft version
 
+Running the code in VSCode:
+
+Pressing the F5 key should start VSCode running. It will run the file that currently selected or in focus so make sure app.py is in open and  selected.
+
+if this is not working try adding a configuration file.
+
+- Select the debug Icon on the left (Ctrl+Shift+D).
+- From the drop down select box at top of the page ckick the arrow to open the box and scroll the bottom and select the 'Add Configuration'
+- Check the .vscode folder and look for the lanch.json file
+- Open and/or select the app.py and hit the F5 button again and it should now work.
+
 ## How to set up
 
 Once you have installed all the plugins and restarted VSCode, press the F1 key.
