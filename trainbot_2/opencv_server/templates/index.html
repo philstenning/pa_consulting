@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="static/reset.css" />
+        <link rel="stylesheet" href="static/styles.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div>
+                <div>
+                    <h2>Processed feed from opencv</h2>
+                    <!--  change this to your feed from this computer's servers ip address -->
+                    <img src="http://192.168.0.10:5000/video_feed" />
+                    <!-- <img src="http://192.168.0.16:8081/" /> -->
+                </div>
+                <div>
+                    <h2>Raw feed from RPI Zero</h2>
+                    <!-- this is the feed from the pi zero, you will have to find the ip
+            address of it and then input it below -->
+                    <img src="http://192.168.0.4:8081/" />
+                </div>
+            </div>
+            <div class="control-grid">
+                <h2>Controls</h2>
+                <div class="control">
+                    <h3>Proximity Sensor</h3>
+                    <p>data here</p>
+                </div>
+                <div class="control">
+                    <h3>RPI Info</h3>
+                    <p>data here</p>
+                </div>
+                <div class="control">
+                    <h3>Slider</h3>
+                    <p>TODO:</p>
+                </div>
+                <div class="control">
+                    <h3>Controlling options</h3>
+                    <select class="controller-options">
+                        <option value="1">Manual Drive - Slider</option>
+                        <option value="2">Manual Drive - WiiMote</option>
+                        <option value="3">Auto Drive</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

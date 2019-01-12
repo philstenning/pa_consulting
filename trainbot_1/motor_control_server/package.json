@@ -1,0 +1,17 @@
+{
+    "name": "trainbot_1_server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "start": "app.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.16.4",
+        "socket.io": "^2.2.0"
+    }
+}

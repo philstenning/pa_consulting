@@ -1,0 +1,67 @@
+.info-control-container {
+    display: grid;
+    row-gap: 10px;
+    grid-template-rows: 60px 1fr;
+    border: solid 1px #666666;
+    background-color: #1a1a1a;
+    padding: 0;
+    position: relative;
+}
+
+.control-row-one {
+    display: grid;
+    grid-template-columns: 110px 1fr 1fr;
+    /* background-color: hotpink; */
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.control-row-one .label {
+    margin: 0;
+    padding: 12px;
+    border-right: solid 1px #666666;
+    border-bottom: solid 1px #666666;
+    text-align: start;
+
+    font-weight: bold;
+}
+.control-row-two {
+    display: grid;
+    grid-gap: 5px;
+    font-size: 1.4em;
+    padding: 12px;
+    height: auto;
+}
+
+.control-row-two .item {
+    display: grid;
+    grid-template-columns: 150px 1fr 80px;
+    background-color: #2c2a2a;
+
+    /* border: solid 1px #666666; */
+}
+
+.control-row-two .item span {
+    border: solid 1px #666666;
+    padding: 12px;
+    font-size: 0.8em;
+    border-left: none;
+}
+
+.control-row-two .item {
+    border: solid 1px #666666;
+    /* height: 50px; */
+}
+
+.control-row-two .item button {
+    background-color: #2c2a2a;
+    border: solid 1px #666666;
+    border-left: none;
+    color: #f2f2f2;
+    transition: background-color 0.5s, color 0.5s;
+}
+.control-row-two .item button:hover {
+    color: #2c2a2a;
+
+    background-color: #f2f2f2;
+}

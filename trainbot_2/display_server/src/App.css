@@ -1,0 +1,101 @@
+body {
+    background-color: #0d0d0d;
+}
+main {
+    position: relative;
+}
+.App {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+
+    padding: 12px;
+    color: #f2f2f2;
+    background-color: #0d0d0d;
+    /* row-gap: 10px; */
+}
+.feeds {
+    display: grid;
+    row-gap: 10px;
+
+    grid-template-rows: 242px 242px 1fr;
+}
+.controls {
+    display: grid;
+    row-gap: 10px;
+
+    /* grid-template-rows: 1fr; */
+}
+
+time {
+    border: solid 2px hotpink;
+}
+.hidden {
+    background-color: green;
+}
+
+.enabled {
+}
+
+.bg-red {
+    background-color: red;
+    color: #f2f2f2;
+    outline: none;
+    transition: background-color 1s ease-out;
+}
+.bg-light-grey {
+    background-color: #333333;
+    color: #0d0d0d;
+    outline: none;
+}
+
+img {
+    border: solid 1px #666666;
+    border-right: none;
+
+    /* border-radius: 3px; */
+}
+figure {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+figcaption {
+    position: absolute;
+    top: 0px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+
+    width: 320px;
+
+    text-align: center;
+}
+
+.control-container {
+    display: grid;
+    row-gap: 10px;
+    grid-template-rows: 1fr 1fr;
+    border: solid 1px #666666;
+    background-color: #1a1a1a;
+    padding: 15px;
+    position: relative;
+}
+
+.tab {
+    min-width: 120px;
+    position: absolute;
+    top: 0px;
+    padding: 12px 12px 14px 12px;
+    margin: 0;
+    border-right: solid 1px #666666;
+    border-bottom: solid 1px #666666;
+}
+.test {
+    width: 0px;
+    background-color: red;
+
+    height: 60px;
+    /* transition: width ease-out 1s, background-color 1s; */
+    transition: all 5s ease-out;
+}

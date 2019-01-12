@@ -1,0 +1,14 @@
+{
+    "name": "proximity-sensor-simulator",
+    "version": "1.0.0",
+    "description": "This module is used in testing the api on the robot server",
+    "main": "main.js",
+    "scripts": {},
+    "keywords": [],
+    "author": "Phil Stenning",
+    "license": "ISC",
+    "dependencies": {
+        "request": "^2.88.0",
+        "request-promise-native": "^1.0.5"
+    }
+}

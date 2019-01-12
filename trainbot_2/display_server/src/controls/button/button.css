@@ -1,0 +1,9 @@
+.button-container {
+    display: grid;
+    row-gap: 10px;
+    grid-template-rows: 1fr;
+    border: solid 1px #666666;
+    background-color: #1a1a1a;
+    padding: 15px;
+    position: relative;
+}

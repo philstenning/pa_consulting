@@ -1,0 +1,37 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;
+}
+h2,
+h3 {
+    font-size: 20px;
+    padding: 5px 0;
+    text-align: center;
+}
+h3 {
+    font-size: 15px;
+}
+
+.control-grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.control {
+    border: 2px solid hotpink;
+    padding: 10px;
+}
+
+.controller-options {
+    margin: 10px 0;
+}

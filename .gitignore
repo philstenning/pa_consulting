@@ -34,6 +34,10 @@ build/Release
 
 # Dependency directories
 node_modules/
+trainbot_1/motor_control_server/node_modules/
+trainbot_2/display_server/node_modules/
+trainbot_2/display_server/helpers/node_modules/
+
 jspm_packages/
 
 # TypeScript v1 declaration files
